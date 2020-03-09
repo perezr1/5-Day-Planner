@@ -16,60 +16,75 @@
 <body>
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p style="font-weight: bolder;">Enjoy planing your day using our Word Day Scheduler!</p>
     <p id="currentDay" class="lead"></p>
   </header>
+  
+  <div class="container mb-5">
 
-  <div class="container">
-    <!-- Timeblocks go here -->
-    <div class="row plannerRow" hour-index="9" style="background-color: grey;">
-      <div class="col-md-2"><span class="timeBox">9 am</span></div>
-      <div class="col-md-9"><input id="input-0" hour-index="0" type="text" class="dailyPlan"></div>
-      <div class="col-md-1"><i id="saveid-0" save-id="0" class="far fa-save saveIcon" aria-hidden="true"></i></div>
+    <div class="row" data-time="8">
+      <div class="col-2 hour" id="time-block">08:00 AM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
     </div>
-    <div class="row plannerRow" hour-index="9" style="background-color: grey;">
-      <div class="col-md-2"><span class="timeBox">10 am</span></div>
-      <div class="col-md-9"><input id="input-0" hour-index="0" type="text" class="dailyPlan"></div>
-      <div class="col-md-1"><i id="saveid-0" save-id="0" class="far fa-save saveIcon" aria-hidden="true"></i></div>
+
+    <div class="row" data-time="9">
+      <div class="col-2 hour" id="time-block">09:00 AM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
     </div>
-    <div class="row plannerRow" hour-index="9" style="background-color: grey;">
-      <div class="col-md-2"><span class="timeBox">11 am</span></div>
-      <div class="col-md-9"><input id="input-0" hour-index="0" type="text" class="dailyPlan"></div>
-      <div class="col-md-1"><i id="saveid-0" save-id="0" class="far fa-save saveIcon" aria-hidden="true"></i></div>
+
+    <div class="row" data-time="10">
+      <div class="col-2 hour" id="time-block">10:00 AM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
     </div>
-    <div class="row plannerRow" hour-index="9" style="background-color: grey;">
-      <div class="col-md-2"><span class="timeBox">12 am</span></div>
-      <div class="col-md-9"><input id="input-0" hour-index="0" type="text" class="dailyPlan"></div>
-      <div class="col-md-1"><i id="saveid-0" save-id="0" class="far fa-save saveIcon" aria-hidden="true"></i></div>
+
+    <div class="row" data-time="11">
+      <div class="col-2 hour" id="time-block">11:00 AM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
     </div>
-    <div class="row plannerRow" hour-index="9" style="background-color: grey;">
-      <div class="col-md-2"><span class="timeBox">01 pm</span></div>
-      <div class="col-md-9"><input id="input-0" hour-index="0" type="text" class="dailyPlan"></div>
-      <div class="col-md-1"><i id="saveid-0" save-id="0" class="far fa-save saveIcon" aria-hidden="true"></i></div>
+
+    <div class="row" data-time="12">
+      <div class="col-2 hour" id="time-block">12:00 PM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
     </div>
-    <div class="row plannerRow" hour-index="9" style="background-color: grey;">
-      <div class="col-md-2"><span class="timeBox">02 pm</span></div>
-      <div class="col-md-9"><input id="input-0" hour-index="0" type="text" class="dailyPlan"></div>
-      <div class="col-md-1"><i id="saveid-0" save-id="0" class="far fa-save saveIcon" aria-hidden="true"></i></div>
+
+    <div class="row" data-time="13">
+      <div class="col-2 hour" id="time-block">01:00 PM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
     </div>
-    <div class="row plannerRow" hour-index="9" style="background-color: grey;">
-      <div class="col-md-2"><span class="timeBox">03 pm</span></div>
-      <div class="col-md-9"><input id="input-0" hour-index="0" type="text" class="dailyPlan"></div>
-      <div class="col-md-1"><i id="saveid-0" save-id="0" class="far fa-save saveIcon" aria-hidden="true"></i></div>
+
+    <div class="row" data-time="14">
+      <div class="col-2 hour" id="time-block">02:00 PM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
     </div>
-    <div class="row plannerRow" hour-index="9" style="background-color: grey;">
-      <div class="col-md-2"><span class="timeBox">04 pm</span></div>
-      <div class="col-md-9"><input id="input-0" hour-index="0" type="text" class="dailyPlan"></div>
-      <div class="col-md-1"><i id="saveid-0" save-id="0" class="far fa-save saveIcon" aria-hidden="true"></i></div>
+
+    <div class="row" data-time="15">
+      <div class="col-2 hour" id="time-block">03:00 PM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
     </div>
-    <div class="row plannerRow" hour-index="9" style="background-color: grey;">
-      <div class="col-md-2"><span class="timeBox">05 pm</span></div>
-      <div class="col-md-9"><input id="input-0" hour-index="0" type="text" class="dailyPlan"></div>
-      <div class="col-md-1"><i id="saveid-0" save-id="0" class="far fa-save saveIcon" aria-hidden="true"></i></div>
+
+    <div class="row" data-time="16">
+      <div class="col-2 hour" id="time-block">04:00 PM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
     </div>
+
+    <div class="row" data-time="17">
+      <div class="col-2 hour" id="time-block">05:00 PM</div>
+      <textarea class="description col-8"></textarea>
+      <button class="saveBtn col-2">Save</button>
+    </div>
+
   </div>
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script defer src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
 
